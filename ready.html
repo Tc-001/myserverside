@@ -1,0 +1,28 @@
+<prop from="content"></prop>
+<prop from="name"></prop>
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script>
+//Code added by MyServerside
+function fromServer(from) {
+  var props = JSON.parse(atob("eyJjb250ZW50IjoiSGVsbG8iLCJuYW1lIjoiV29ybGQhIiwicmF3SFRNTCI6IjxwPkkgYW0gZW1iZWRkZWQgPGI+aHRtbDwvYj4uPC9wPiJ9"))
+  return props[from]
+}
+</script></head>
+  <body>
+    <h1>
+      Hello World!
+    </h1>
+    <p>I am embedded <b>html</b>.</p>
+    <div id="aaaaa"></div>
+    <script>
+      let aaaaaa = fromServer("name");
+      console.log(aaaaaa);
+    </script>
+  
+</body>
+default: 18ms
